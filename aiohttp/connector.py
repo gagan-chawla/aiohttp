@@ -508,7 +508,7 @@ class BaseConnector:
 
         return total_remain
 
-    async def connect(
+    async def connect(  # CONNECTION
         self, req: ClientRequest, traces: List["Trace"], timeout: "ClientTimeout"
     ) -> Connection:
         """Get from pool or create new connection."""
@@ -538,7 +538,7 @@ class BaseConnector:
                 if traces:
                     for trace in traces:
                         await trace.send_connection_create_start()
-                proto = await self._create_connection(req, traces, timeout)
+                proto = await self._create_connection(req, traces, timeout)  ## HERE
                 if traces:
                     for trace in traces:
                         await trace.send_connection_create_end()
@@ -1036,7 +1036,7 @@ class TCPConnector(BaseConnector):
 
         return self._cached_hosts.next_addrs(key)
 
-    async def _create_connection(
+    async def _create_connection(  ###
         self, req: ClientRequest, traces: List["Trace"], timeout: "ClientTimeout"
     ) -> ResponseHandler:
         """Create connection.
@@ -1092,7 +1092,7 @@ class TCPConnector(BaseConnector):
             return ret
         return None
 
-    async def _wrap_create_connection(
+    async def _wrap_create_connection( ##
         self,
         *args: Any,
         addr_infos: List[aiohappyeyeballs.AddrInfoType],
@@ -1112,7 +1112,7 @@ class TCPConnector(BaseConnector):
                     interleave=self._interleave,
                     loop=self._loop,
                 )
-                return await self._loop.create_connection(*args, **kwargs, sock=sock)
+                return await self._loop.create_connection(*args, **kwargs, sock=sock)  ##
         except cert_errors as exc:
             raise ClientConnectorCertificateError(req.connection_key, exc) from exc
         except ssl_errors as exc:
@@ -1252,7 +1252,7 @@ class TCPConnector(BaseConnector):
             )
         return addr_infos
 
-    async def _create_direct_connection(
+    async def _create_direct_connection(  ####
         self,
         req: ClientRequest,
         traces: List["Trace"],

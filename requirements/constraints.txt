@@ -257,7 +257,7 @@ typing-extensions==4.14.1
     #   pydantic-core
     #   python-on-whales
     #   rich
-uritemplate==4.1.1
+uritemplate==4.2.0
     # via gidgethub
 urllib3==2.5.0
     # via requests

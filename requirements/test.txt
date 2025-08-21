@@ -64,7 +64,9 @@ packaging==24.2
     #   gunicorn
     #   pytest
 pluggy==1.5.0
-    # via pytest
+    # via
+    #   pytest
+    #   pytest-cov
 propcache==0.3.2
     # via
     #   -r requirements/runtime-deps.in
@@ -90,7 +92,7 @@ pytest==8.1.1
     #   pytest-xdist
 pytest-codspeed==4.0.0
     # via -r requirements/test.in
-pytest-cov==6.0.0
+pytest-cov==6.2.1
     # via -r requirements/test.in
 pytest-mock==3.14.1
     # via -r requirements/test.in

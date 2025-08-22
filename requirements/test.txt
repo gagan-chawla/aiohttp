@@ -63,7 +63,7 @@ packaging==25.0
     # via
     #   gunicorn
     #   pytest
-pluggy==1.5.0
+pluggy==1.6.0
     # via
     #   pytest
     #   pytest-cov

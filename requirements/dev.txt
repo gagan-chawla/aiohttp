@@ -143,7 +143,7 @@ pydantic==2.10.6
     # via python-on-whales
 pydantic-core==2.27.2
     # via pydantic
-pygments==2.19.1
+pygments==2.19.2
     # via
     #   rich
     #   sphinx

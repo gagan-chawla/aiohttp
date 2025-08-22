@@ -33,7 +33,7 @@ exceptiongroup==1.3.0
     # via pytest
 execnet==2.1.1
     # via pytest-xdist
-freezegun==1.5.1
+freezegun==1.5.5
     # via -r requirements/test.in
 frozenlist==1.7.0
     # via

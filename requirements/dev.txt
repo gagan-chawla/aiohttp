@@ -139,9 +139,9 @@ pycares==4.10.0
     # via aiodns
 pycparser==2.22
     # via cffi
-pydantic==2.10.6
+pydantic==2.11.7
     # via python-on-whales
-pydantic-core==2.27.2
+pydantic-core==2.33.2
     # via pydantic
 pygments==2.19.1
     # via
@@ -248,6 +248,9 @@ typing-extensions==4.14.1
     #   pydantic-core
     #   python-on-whales
     #   rich
+    #   typing-inspection
+typing-inspection==0.4.1
+    # via pydantic
 uritemplate==4.2.0
     # via gidgethub
 urllib3==2.5.0

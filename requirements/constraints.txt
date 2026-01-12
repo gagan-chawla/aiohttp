@@ -4,7 +4,7 @@
 #
 #    pip-compile --allow-unsafe --output-file=requirements/constraints.txt --resolver=backtracking --strip-extras requirements/constraints.in
 #
-aiodns==3.6.1 ; sys_platform == "linux" or sys_platform == "darwin"
+aiodns==4.0.0 ; sys_platform == "linux" or sys_platform == "darwin"
     # via
     #   -r requirements/lint.in
     #   -r requirements/runtime-deps.in
@@ -142,7 +142,7 @@ proxy-py==2.4.10
     # via
     #   -r requirements/lint.in
     #   -r requirements/test.in
-pycares==4.11.0
+pycares==5.0.1
     # via aiodns
 pycparser==2.23
     # via cffi

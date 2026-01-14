@@ -47,7 +47,7 @@ idna==3.11
     #   yarl
 iniconfig==2.3.0
     # via pytest
-librt==0.7.7
+librt==0.7.8
     # via mypy
 markdown-it-py==4.0.0
     # via rich

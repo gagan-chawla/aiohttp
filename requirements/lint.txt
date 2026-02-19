@@ -115,5 +115,5 @@ uvloop==0.22.1 ; platform_system != "Windows"
     # via -r requirements/lint.in
 valkey==6.1.1
     # via -r requirements/lint.in
-virtualenv==20.37.0
+virtualenv==20.38.0
     # via pre-commit

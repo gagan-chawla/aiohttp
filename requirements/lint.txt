@@ -37,7 +37,7 @@ idna==3.13
     # via trustme
 iniconfig==2.3.0
     # via pytest
-librt==0.9.0
+librt==0.10.0
     # via mypy
 markdown-it-py==4.0.0
     # via rich

@@ -6,7 +6,7 @@
 #
 aiodns==4.0.4 ; sys_platform == "linux" or sys_platform == "darwin"
     # via -r requirements/runtime-deps.in
-aiohappyeyeballs==2.6.1
+aiohappyeyeballs==2.6.2
     # via -r requirements/runtime-deps.in
 aiosignal==1.4.0
     # via -r requirements/runtime-deps.in

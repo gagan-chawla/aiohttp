@@ -124,7 +124,7 @@ packaging==26.2
     #   wheel
 pathspec==1.1.1
     # via mypy
-pip-tools==7.5.3
+pip-tools==7.6.0
     # via -r requirements/dev.in
 platformdirs==4.10.0
     # via

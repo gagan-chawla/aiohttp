@@ -125,7 +125,7 @@ pathspec==1.1.1
     # via mypy
 pip-tools==7.6.2
     # via -r requirements/dev.in
-platformdirs==4.12.3
+platformdirs==4.12.4
     # via virtualenv
 pluggy==1.6.0
     # via

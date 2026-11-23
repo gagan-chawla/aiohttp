@@ -48,7 +48,7 @@ idna==3.20
     #   yarl
 iniconfig==2.3.1
     # via pytest
-librt==0.16.0
+librt==0.17.0
     # via mypy
 markdown-it-py==4.3.0
     # via rich
@@ -61,7 +61,9 @@ multidict==7.1.0
 mypy==2.4.1 ; implementation_name == "cpython"
     # via -r requirements/test.in
 mypy-extensions==1.2.0
-    # via mypy
+    # via
+    #   librt
+    #   mypy
 packaging==26.3
     # via pytest
 pathspec==1.1.1
